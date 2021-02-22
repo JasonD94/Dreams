@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--
+    File: index.html
+    Jason Downing
+    Contact: jason@downing.io
+    MIT Licensed - see http://opensource.org/licenses/MIT for details.
+    Anyone may freely use this code. Just don't sue me if it breaks stuff.
+    Created: February 21st, 2021
+    Last Updated: February 21st, 2021
+
+    This code is originally from: https://github.com/JasonD94/jasond94.github.io
+    Which itself is based on
+    the Creative Start Bootstrap theme: https://startbootstrap.com/template-overviews/creative/
+
+    This webpage is an album of amazing dreams generated on https://deepdreamgenerator.com/
+		I automagically downloaded my dreams using a Python script (using BeautifulSoup4 + Requests),
+		which you can find on my GitHub here: https://github.com/JasonD94/DeepDreams
+  -->
+
+  <!-- Custom Title Bar -->
+  <title>Deep Dreams</title>
+
+  <script src="https://use.fontawesome.com/4dfd1d7bab.js"></script>
+	<!-- Google fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+	<!-- Third party plugin CSS-->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet" />
+
+  <!-- Theme CSS -->
+  <link href="css/creative.css" rel="stylesheet">
+
+  <!-- Index CSS -->
+  <link href="css/index.css" rel="stylesheet">
+
+  <!-- Custom favicon -->
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+  <!-- Google Analytics Tracking Tag. Track how people access my site and such. -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-68657454-1', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+</head>
+
+<body id="page-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+
+      <!-- Updated with latest Creative -->
+      <a class="navbar-brand page-scroll" href="/">Jason Downing</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" 
+              data-toggle="collapse" data-target="#navbarResponsive" 
+              aria-controls="navbarResponsive" aria-expanded="false" 
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+          </li>
+					<li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#dreams">Dreams</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+  </nav>
+
+  <!--  Intro Section  -->
+  <header class="masthead text-center text-black d-flex">
+    <div class="container my-auto header-content-pos">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h1 class="text-uppercase">
+						<strong>Dreams</strong>
+					</h1>
+					<hr class="divider my-4" />
+				</div>
+				<div class="col-lg-8 mx-auto">
+					<p class="text-black font-weight-bold">All of my 'deep dreams' that I generated and published on the
+					<a href="https://deepdreamgenerator.com/">Deep Dream Generator</a></p>
+					<p class="text-black font-weight-bold">You can find 
+					<a href="https://deepdreamgenerator.com/u/304643">my public dreams here</a>, which should 
+					match what is displayed on this page - assuming I updated this page to match!</p>
+					<a href="#dreams" class="btn btn-primary btn-xl js-scroll-trigger">View the DREAMS</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mountain Biking Photos will go here -->
+  <section class="min-padding bg-primary">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading" id="dreams">You Make My Dreams Come True</h2>
+          <hr class="divider light my-4" />
+        </div>
+      </div>
+
+      <div class="row">
+
+        <!-- Photo Album to go here
+
+         Using nanogalley2: https://github.com/nanostudio-org/nanogallery2
+         http://nanogallery2.nanostudio.org/index.html
+
+         js/load-images.js populates this automagically
+				 (should do this in the Skiing album too, hmm)
+
+         -->
+        <div class="col-lg-12 text-center">
+          <div id="nanogallery2"></div>
+          
+          <!-- href's will appear here.
+               they should look something like this: 
+               
+               <a href="img/album/0315171554_Pano.jpg"
+               data-ngthumb="img/album/0315171554_Pano.jpg">Cannon Mountain 3/15/2017</a>
+          -->
+          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="min-padding" id="contact">
+    <div class="container">
+    
+      <!-- Contact Jason Row -->
+      <div class="row">
+        <div class="col-lg-8 mx-auto text-center">
+          <h2 class="section-heading">
+          
+          <!-- Attempting to avoid spam by removing @ and the dot in my domain -->
+            Contact Jason</h2>
+          <hr class="divider my-4" />
+          <p>If you have an interesting opportunity in the <strong>Boston area</strong> (Jason is <strong>not</strong> interested in relocating), you
+            can send (no spam plz 🙁) him a message using the form below.</p>
+          
+          <!-- Really avoiding spam by sending emails to the spam box
+               Docs URL: https://formspree.io/ 
+               Also, Bootstrap forms: https://getbootstrap.com/docs/3.3/css/#forms -->
+	        <!--!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+							!!!!!!!     CHANGE THE FORMSPREE ENDPOINT TO YOUR OWN EMAIL IF YOU FORK THIS REPO. MUCH THANKS     !!!!!!!          
+							!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+					-->
+          <form action="https://formspree.io/mdopovkv" method="POST" class="form-horizontal" role="form">
+            <!-- Need a name, reply to email, and a message -->
+            <div class="form-group">
+              <input type="text" name="name" placeholder="Your Name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <input type="email" name="email" placeholder="Your Email" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <textarea name="message" placeholder="Your message" class="form-control" required></textarea>
+            </div>
+            <!-- Hidden elements here -->
+            <input type="hidden" name="_subject" value="New email from Contact Me Form!" class="form-control">
+            <input type="hidden" name="_next" value="thanks.html" />
+            <!-- Submit button -->
+            <div class="form-group">
+              <input type="submit" value="Email Jason" class="btn btn-primary btn-xl">
+            </div>
+          </form>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <p>You can also find his personal email, LinkedIn and GitHub below too.</p>
+        </div>
+      </div>
+      
+      <!-- Email, LinkedIn, and GitHub links -->
+      <div class="row">
+      
+			  <!-- Removed email link, because spam bots just figure it out and I get hit with 10s of thousands of
+              requests a month so... not doing that. If you can read this, just open up my resume ;P      -->
+        <div class="col-4 col-sm-4 col-lg-2 offset-lg-3 text-center">
+				  <a href="../img/resume.pdf">
+						<i class="fa fa-envelope fa-4x sr-icons"></i>
+					</a>
+					<a href="../img/resume.pdf">
+						<p>Email - <span class="text-blue text-italic font-weight-bold">see resume</span></p>
+					</a>
+        </div>
+        
+        <div class="col-4 col-sm-4 col-lg-2 text-center">
+          <a href="https://www.linkedin.com/in/jasonpdowning">
+            <i class="fa fa-linkedin-square fa-4x sr-icons"></i>
+          </a>
+          <p><a href="https://www.linkedin.com/in/jasonpdowning" class="text-blue">LinkedIn</a></p>
+        </div>
+        
+        <div class="col-4 col-sm-4 col-lg-2 text-center">
+          <a href="https://github.com/JasonD94">
+            <i class="fa fa-github-square fa-4x sr-icons"></i>
+          </a>
+          <p><a href="https://github.com/JasonD94" class="text-blue">GitHub</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--  THIS IS THE FOOTER - displays a copyright notice and
+        that Bootstrap powers this web page.
+        
+        6/16/2018: Added new line for the Source on Github... part, with margin bottom
+                   set to 1 (awesome new bootstrap 4 mb-1 class)-->
+  <div class="container">
+    <p class="text-center text-muted text-small mb-1">
+      Jason Downing &copy; 2016 - <span id="copyright-year"></span>. All rights reserved.
+      Powered by <a href="http://www.getbootstrap.com/" class="text-blue">Bootstrap</a>.
+    </p>
+    <p class="text-center text-muted text-small">
+      Source on <a href="https://github.com/JasonD94/Mountain-Biking" class="text-blue">GitHub</a>.
+      Theme based on the
+      <a href="http://startbootstrap.com/template-overviews/creative/" class="text-blue">Creative Bootstrap Theme</a>
+      by <a href="http://startbootstrap.com/" class="text-blue">Start Bootstrap</a>.
+    </p>
+		<br/>
+  </div>
+
+  <!-- 2/20/2021: Updated with the latest Start Bootstrap code, so following what they did.
+							  Exception: the slim jquery seems to cause console errors. The full jquery gets rid of that,
+								and it seems like the scrolling works too. Weird.
+       https://github.com/BlackrockDigital/startbootstrap-creative  -->
+       
+ <!-- Bootstrap core JS-->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+	<!-- Third party plugin JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+	<!-- Core theme JS-->
+  <script src="js/creative.js"></script>
+  
+  <!-- nanogallery2 -->
+  <link href="css/nanogallery2.min.css" rel="stylesheet">
+  <script src="js/jquery.nanogallery2.min.js"></script>
+  
+  <!-- Dynamically loading all images in a directory into the nanogallery2 -->
+  <script src="js/load-images.js"></script>
+
+	<!-- Automagically update the copyright year - why did I ever hardcode that? RIP lazy 2015 - 2020 me. -->
+	<script>
+		document.getElementById("copyright-year").innerHTML = new Date().getFullYear();
+	</script>
+
+</body>
+</html>
