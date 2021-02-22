@@ -23,9 +23,9 @@ var imgList = [];
 // GitHub API End Point URL / Path
 var githubApiVersion = "application/vnd.github.v3+json";
 var githubApiBaseUrl = "https://api.github.com";
-var githubRepo = "Mountain-Biking";
+var githubRepo = "Dreams";
 var githubPath = "img/album/";
-var githubBranch = "gh-pages";
+var githubBranch = "master";
 
 $( document ).ready(function() {
   
@@ -46,7 +46,7 @@ $( document ).ready(function() {
     // Example: https://api.github.com/repos/JasonD94/Mountain-Biking/contents/img/album/
     url: githubGetRequest,
     
-    // Need to provide the branch so we pull from gh-pages and NOT master
+    // Need to provide the branch
     data: {"ref": githubBranch},
     
     // Make sure to request API V3, just in case GitHub releases a future version 
@@ -81,23 +81,28 @@ $( document ).ready(function() {
       // And I like slashes instead of dashes so let's replace those too!
       var imgName = data[x].name;
 			
-			imgDate = imgName.split("_")
-			imgDate = imgDate[0]
+			// TODO: must be a better way to do dates then splitting on the name... why did I do it this way? Lazy Json!
+			//imgDate = imgName.split("_")
+			//imgDate = imgDate[0]
 			
-      imgName = imgName.replace(/_/g, " ").replace(/-/g, "/").replace(".jpg", " "); 
+			// TODO: Figure out how to save the titles from Deep Dream Generator,
+			//       that would be way better to use.
+      imgName = "Dream #" + (x + 1)
       
       imgList.push({ "src": imgPath,
                       "srct": imgPath,
-                      "title": imgName,
-                      "date": imgDate
+                      "title": imgName
 			            });
     }
     
+		// TODO: Should we sort by Date? If so, figure out how to get the file's date...
 		// Sort by date
 		// https://stackoverflow.com/questions/10123953/how-to-sort-an-array-by-a-date-property
+		/*
 		imgList.sort(function(a, b){
 			return new Date(b.date) - new Date(a.date)
 		});
+	  */
 	
     $("#nanogallery2").nanogallery2({
       
