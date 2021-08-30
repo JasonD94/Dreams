@@ -23,7 +23,12 @@
 }
 
 header .header-content-pos {
+	/*
+			DISABLING THIS UNTIL I FIND A BETTER BACKGROUND OR SOLUTION
+	*/
+	/*
 	transform: translateY(-90%)
+	*/
 }
 
 .text-small {
